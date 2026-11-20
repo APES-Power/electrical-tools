@@ -1,0 +1,7 @@
+/mnt/Chamber/dev/260902-load-list/02 Código fuente/build/CMakeFiles/electrical-tools.dir
+/mnt/Chamber/dev/260902-load-list/02 Código fuente/build/CMakeFiles/edit_cache.dir
+/mnt/Chamber/dev/260902-load-list/02 Código fuente/build/CMakeFiles/rebuild_cache.dir
+/mnt/Chamber/dev/260902-load-list/02 Código fuente/build/CMakeFiles/list_install_components.dir
+/mnt/Chamber/dev/260902-load-list/02 Código fuente/build/CMakeFiles/install.dir
+/mnt/Chamber/dev/260902-load-list/02 Código fuente/build/CMakeFiles/install/local.dir
+/mnt/Chamber/dev/260902-load-list/02 Código fuente/build/CMakeFiles/install/strip.dir

@@ -1,0 +1,359 @@
+{
+  "cuadros": [
+    {
+      "baterias": [
+        {
+          "config_fases": "3F",
+          "cos_objetivo": 0.95,
+          "diagrama": {
+            "h": 72.0,
+            "w": 210.0,
+            "x": 540.0,
+            "y": 44.0
+          },
+          "escalon_kvar": 25.0,
+          "nombre": "BATERÍA DE CONDENSADORES",
+          "q_kvar": 50.0,
+          "rev": "",
+          "tag": "CAP-01",
+          "tension_v": null
+        }
+      ],
+      "calc_con_trafo": false,
+      "cargas": [],
+      "compensacion": true,
+      "config_fases": "3F+N",
+      "diagrama": {
+        "h": 80.0,
+        "w": 640.0,
+        "x": -160.0,
+        "y": 40.0
+      },
+      "ke": 1.0,
+      "nombre": "CUADRO GENERAL DE BAJA TENSIÓN",
+      "rev": "",
+      "subcuadros": [
+        {
+          "baterias": [],
+          "calc_con_trafo": false,
+          "cargas": [
+            {
+              "config_fases": null,
+              "cos_phi": null,
+              "ke": 0.0,
+              "ks": 1.0,
+              "ku": 0.5,
+              "longitud_m": null,
+              "nombre": "",
+              "p_nom_kw": 250.0,
+              "rendimiento_pct": null,
+              "rev": "",
+              "tag": "M-01",
+              "tag_emer": null,
+              "tipo": "MOTOR",
+              "zona": ""
+            },
+            {
+              "config_fases": "3F+N",
+              "cos_phi": null,
+              "ke": 1.0,
+              "ks": 1.0,
+              "ku": 1.0,
+              "longitud_m": 25.0,
+              "nombre": "compresor",
+              "p_nom_kw": 15.0,
+              "rendimiento_pct": null,
+              "rev": "1",
+              "tag": "PS-M-01",
+              "tag_emer": null,
+              "tipo": "MOTOR",
+              "zona": "PS"
+            },
+            {
+              "config_fases": null,
+              "cos_phi": null,
+              "ke": 0.0,
+              "ks": 1.0,
+              "ku": 1.0,
+              "longitud_m": null,
+              "nombre": "",
+              "p_nom_kw": 1.0,
+              "rendimiento_pct": null,
+              "rev": "",
+              "tag": "PS-M-02",
+              "tag_emer": null,
+              "tipo": "MOTOR",
+              "zona": "PS"
+            }
+          ],
+          "compensacion": false,
+          "config_fases": "3F+N",
+          "diagrama": {
+            "x": 65.0,
+            "y": 290.0
+          },
+          "ke": 1.0,
+          "nombre": "CUADRO ALIMENTADO POR UPS1",
+          "rev": "",
+          "sai_alimentacion": "UPS1",
+          "subcuadros": [],
+          "tag": "CDS",
+          "tag_emer": "UPS1",
+          "tipo": "DIST. SEC.",
+          "trafo": "",
+          "zona": ""
+        }
+      ],
+      "tag": "CGBT",
+      "tag_emer": "GE1",
+      "tipo": "GENERAL BT",
+      "trafo": "TR1",
+      "zona": ""
+    }
+  ],
+  "datos_generales": {
+    "fotovoltaica": [
+      {
+        "config_fases": "3F+N",
+        "cuadro": "CGBT",
+        "diagrama": {
+          "x": 290.0,
+          "y": -120.0
+        },
+        "n_inversores": 3,
+        "nombre": "Fotovoltaica cubierta",
+        "p_inversor_kw": 30.0,
+        "p_pico_kwp": 100.0,
+        "rev": "",
+        "tag": "FV1"
+      }
+    ],
+    "p_min_1f_3f_kw": 5.0,
+    "portada": {
+      "codigo_documento": "230XX-TBL-BTE-PE-0100-R1",
+      "comprobado": "XXXXXXXXXXXXXXXXXXXXXX",
+      "empresa": "INGENIERÍA XXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "escrito": "XXXXXXXXXXXXXXXXXX",
+      "titulo": "LISTA DE CARGA",
+      "verificado": "Jesús Martínez García"
+    },
+    "prefijo_bateria": "CAP",
+    "tablas_automaticas": true,
+    "tags_automaticos": true,
+    "tipos_carga": [
+      {
+        "cos_fijo": 0.95,
+        "descripcion": "ALUMBRADO DE EMERGENCIA",
+        "nombre": "AL. EMER.",
+        "prefijo": "AEM",
+        "rendimiento": 0
+      },
+      {
+        "cos_fijo": 0.95,
+        "descripcion": "ALUMBRADO",
+        "nombre": "ALUMB.",
+        "prefijo": "AL",
+        "rendimiento": 0
+      },
+      {
+        "cos_fijo": 0.9,
+        "descripcion": "CÁMARAS DE VIDEOVIGILANCIA",
+        "nombre": "CCTV",
+        "prefijo": "CCTV",
+        "rendimiento": 0
+      },
+      {
+        "cos_fijo": 0.9,
+        "descripcion": "CENTRO DE PROCESAMIENTO DE DATOS",
+        "nombre": "CPD",
+        "prefijo": "CPD",
+        "rendimiento": 0
+      },
+      {
+        "cos_fijo": 1.0,
+        "descripcion": "GENERADOR FOTOVOLTAICO",
+        "nombre": "FOTOVOLT.",
+        "prefijo": "PV",
+        "rendimiento": 0
+      },
+      {
+        "cos_fijo": 0.85,
+        "descripcion": "TOMA DE FUERZA",
+        "nombre": "FUERZA",
+        "prefijo": "TF",
+        "rendimiento": 0
+      },
+      {
+        "cos_fijo": 0.85,
+        "descripcion": "GENERAL",
+        "nombre": "GENERAL",
+        "prefijo": "GEN",
+        "rendimiento": 0
+      },
+      {
+        "cos_fijo": 0.8,
+        "descripcion": "GENERADOR DE APOYO",
+        "nombre": "GENSET",
+        "prefijo": "G",
+        "rendimiento": 0
+      },
+      {
+        "cos_fijo": null,
+        "descripcion": "CLIMATIZACIÓN GENERAL (HVAC)",
+        "nombre": "HVAC",
+        "prefijo": "HVAC",
+        "rendimiento": 1
+      },
+      {
+        "cos_fijo": 0.9,
+        "descripcion": "INSTRUMENTACIÓN Y CONTROL",
+        "nombre": "I&C",
+        "prefijo": "IC",
+        "rendimiento": 0
+      },
+      {
+        "cos_fijo": 0.95,
+        "descripcion": "MOTOR CON VARIADOR DE FRECUENCIA",
+        "nombre": "M+VARIADOR",
+        "prefijo": "VAR",
+        "rendimiento": 2
+      },
+      {
+        "cos_fijo": null,
+        "descripcion": "MOTOR",
+        "nombre": "MOTOR",
+        "prefijo": "M",
+        "rendimiento": 1
+      },
+      {
+        "cos_fijo": 0.85,
+        "descripcion": "PUESTOS DE TRABAJO OFICINAS",
+        "nombre": "PUESTO OF.",
+        "prefijo": "PT",
+        "rendimiento": 0
+      },
+      {
+        "cos_fijo": 1.0,
+        "descripcion": "PUNTO DE RECARGA VEHÍCULO ELÉCTRICO",
+        "nombre": "RECARGA VE",
+        "prefijo": "VE",
+        "rendimiento": 0
+      },
+      {
+        "cos_fijo": 1.0,
+        "descripcion": "RESERVA",
+        "nombre": "RESERVA",
+        "prefijo": "RES",
+        "rendimiento": 0
+      },
+      {
+        "cos_fijo": 0.8,
+        "descripcion": "SPLIT",
+        "nombre": "SPLIT",
+        "prefijo": "SPL",
+        "rendimiento": 0
+      },
+      {
+        "cos_fijo": 0.85,
+        "descripcion": "SERVICIOS AUXILIARES",
+        "nombre": "SS.AA.",
+        "prefijo": "SSAA",
+        "rendimiento": 0
+      },
+      {
+        "cos_fijo": 0.8,
+        "descripcion": "SUMINISTRO COMPLEMENTARIO",
+        "nombre": "SUM. COMP.",
+        "prefijo": "SUM",
+        "rendimiento": 0
+      }
+    ],
+    "transformadores": [
+      {
+        "diagrama": {
+          "x": 65.0,
+          "y": -120.0
+        },
+        "n_paralelo": 3,
+        "s_adm_kva": 2000.0,
+        "s_nom_kva": 2000.0,
+        "tag": "TR1",
+        "u_sec_v": 400.0
+      }
+    ],
+    "zonas": [
+      {
+        "descripcion": "PLANTA SOTANO",
+        "tag": "PS"
+      },
+      {
+        "descripcion": "PLANTA BAJA",
+        "tag": "PB"
+      }
+    ]
+  },
+  "diagrama_flechas": {
+    "C:CDS>S:UPS1": {
+      "lado_destino": 0,
+      "lado_origen": 2
+    },
+    "C:CGBT>C:CDS2": {
+      "codo": 490.0,
+      "lado_destino": 0,
+      "lado_origen": 1
+    },
+    "F:FV1>C:CGBT": {
+      "frac_destino": 0.75,
+      "lado_destino": 0,
+      "lado_origen": 2
+    },
+    "G:GE1>C:CGBT": {
+      "frac_destino": 0.25,
+      "lado_destino": 0,
+      "lado_origen": 2
+    },
+    "G:GE2>C:CGBT": {
+      "lado_destino": 3
+    },
+    "S:UPS1>C:CDS2": {
+      "lado_destino": 0
+    }
+  },
+  "equipos_emergencia": [
+    {
+      "consumo_l_h": 150.0,
+      "diagrama": {
+        "h": 72.0,
+        "w": 190.0,
+        "x": -160.0,
+        "y": -120.0
+      },
+      "eficiencia_pct": 99.0,
+      "forzar_trifasico": true,
+      "horas": 10.0,
+      "nombre": "Grupo electrógeno",
+      "rev": "",
+      "tag": "GE1",
+      "tipo": "G. ELEC.",
+      "v_deposito_incl_l": 1000.0
+    },
+    {
+      "consumo_l_h": 0.0,
+      "cuadro_alimentacion": "CGBT",
+      "diagrama": {
+        "x": 65.0,
+        "y": 170.0
+      },
+      "eficiencia_pct": 99.0,
+      "forzar_trifasico": false,
+      "horas": 1.0,
+      "nombre": "SAI 1",
+      "rev": "",
+      "tag": "UPS1",
+      "tipo": "UPS",
+      "v_deposito_incl_l": 0.0
+    }
+  ],
+  "formato": "lista-cargas",
+  "version": 1
+}

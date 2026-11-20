@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Electrical Tools
+Comment=Lista de cargas eléctricas y arquitectura de cuadros
+Exec=electrical-tools %f
+Icon=com.apespower.electricaltools
+Terminal=false
+Categories=Office;Engineering;
+StartupWMClass=com.apespower.electricaltools
